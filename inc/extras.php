@@ -942,14 +942,14 @@ function be_acf_options_page() {
     if ( ! function_exists( 'acf_add_options_page' ) ) return;
     
     $acf_option_tabs = array(
-        array( 
-            'title'      => 'Today Options',
-            'capability' => 'manage_options',
-        ),
-        array( 
-            'title'      => 'Menu Options',
-            'capability' => 'manage_options',
-        ),
+        // array( 
+        //     'title'      => 'Today Options',
+        //     'capability' => 'manage_options',
+        // ),
+        // array( 
+        //     'title'      => 'Menu Options',
+        //     'capability' => 'manage_options',
+        // ),
         array( 
             'title'      => 'Global Options',
             'capability' => 'manage_options',
