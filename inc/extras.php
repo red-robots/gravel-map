@@ -946,10 +946,10 @@ function be_acf_options_page() {
         //     'title'      => 'Today Options',
         //     'capability' => 'manage_options',
         // ),
-        // array( 
-        //     'title'      => 'Menu Options',
-        //     'capability' => 'manage_options',
-        // ),
+        array( 
+            'title'      => 'Menu Options',
+            'capability' => 'manage_options',
+        ),
         array( 
             'title'      => 'Global Options',
             'capability' => 'manage_options',
