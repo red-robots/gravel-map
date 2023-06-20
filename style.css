@@ -4968,7 +4968,7 @@ body.nav-open .menu-toggle { opacity: 0; }
 
 @media (min-width: 820px) { #banner { margin-top: 90px; } }
 
-#banner .logo-overlay { position: absolute; top: 40%; left: 0; right: 0; margin-left: auto; margin-right: auto; width: 200px; z-index: 10; }
+#banner .logo-overlay { position: absolute; top: 10%; left: 0; right: 0; margin-left: auto; margin-right: auto; width: 200px; z-index: 10; }
 
 @media (min-width: 820px) { #banner .logo-overlay { width: 500px; } }
 
