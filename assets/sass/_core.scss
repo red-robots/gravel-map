@@ -890,10 +890,10 @@ body.nav-open {
 	&.video-playing {
 		z-index: 300;
 	}
-	margin-top: 85px;
+	margin-top: 96px;
 	// margin-bottom: 5px;
 	@include tab {
-		margin-top: 90px;;
+		margin-top: 96px;;
 	}
 	.logo-overlay {
 		position: absolute;

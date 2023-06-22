@@ -1703,7 +1703,7 @@ body.scrolled .navbar{background:rgba(255,255,255,0.95)}
 body.nav-open{overflow:hidden}
 body.nav-open #overlay{display:block;-webkit-animation-name:fadeIn;animation-name:fadeIn}
 body.nav-open .menu-toggle{opacity:0}
-#banner{width:100%;float:left;position:relative;background-color:#000;margin-top:85px}
+#banner{width:100%;float:left;position:relative;background-color:#000;margin-top:96px}
 #banner.video-playing{z-index:300}
 #banner .logo-overlay{position:absolute;top:25%;left:0;right:0;margin-left:auto;margin-right:auto;width:200px;z-index:10}
 #banner .logo-overlay img{width:100%}
@@ -3758,7 +3758,7 @@ section.route-stories.half .block{width:50%}
 .topinfo{display:inline-block;float:right;width:auto}
 .topinfo span.daily-schedule{display:inline-block}
 .navbar{-webkit-box-shadow:none;box-shadow:none}
-#banner{margin-top:90px}
+#banner{margin-top:96px}
 #banner .logo-overlay{width:250px;top:15%}
 #banner .static-banner .slides .iframe-wrapper.yes-mobile .desktop,#banner .flexslider .slides .iframe-wrapper.yes-mobile .desktop{display:block}
 #banner .static-banner .slides .iframe-wrapper.yes-mobile .mobile,#banner .flexslider .slides .iframe-wrapper.yes-mobile .mobile{display:none}
