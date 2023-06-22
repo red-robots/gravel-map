@@ -897,7 +897,7 @@ body.nav-open {
 	}
 	.logo-overlay {
 		position: absolute;
-		top: 10%;
+		top: 25%;
 		left: 0; 
 		right: 0; 
 		margin-left: auto; 
@@ -905,7 +905,12 @@ body.nav-open {
 		width: 200px;
 		z-index: 10;
 		@include tab {
-			width: 500px;
+			width: 250px;
+			top: 15%;
+		}
+		@include desk {
+			top: 17%;
+			width: 350px;
 		}
 		img {
 			width: 100%;
