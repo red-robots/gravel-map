@@ -88,10 +88,10 @@ if($postHeroImage) {
 			$trail_text = ($trail_status_option=='open') ? 'Trails Open':'Trails Closed';
 			?>
 			<div class="topinfo">
-				<span class="trail-status el <?php echo $trail_status ?>">
+				<!-- <span class="trail-status el <?php echo $trail_status ?>">
 					<span class="t"><?php echo $trail_text ?></span>
 					<span class="s"></span>
-				</span>
+				</span> -->
 				<span id="todayLink" class="today el">
 					<?php $today_options = get_field("today","option"); ?>
 					<?php if ($today_options) { ?>
