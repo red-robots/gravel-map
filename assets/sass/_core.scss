@@ -410,7 +410,8 @@ a {
 	width: 100%;
 	float: left;
 	position: relative;
-	background: rgba(255,255,255,.85);
+	// background: rgba(255,255,255,.85);
+	background: $green;
 	box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 	@include tab {
 		box-shadow: none;
@@ -434,7 +435,8 @@ a {
 	}
 }
 body.scrolled .navbar {
-	background: rgba(255,255,255,.95);
+	// background: rgba(255,255,255,.95);
+	background: $green;
 }
 // body.current-slide-is-video .navbar {
 // 	background: rgba(255,255,255,.90);

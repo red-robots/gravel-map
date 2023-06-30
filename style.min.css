@@ -1637,12 +1637,12 @@ a:hover{color:#f8ac95}
 .topinfo .businessHours .tdlink:hover .t1,.topinfo .businessHours .tdlink:hover .t2{opacity:.5}
 .topinfo span.today.open .businessHours{height:auto;max-height:100%;opacity:1;overflow:visible;-webkit-transform:translateY(0);transform:translateY(0);z-index:50}
 .topinfo span.today.open a i.arrow{-webkit-transform:translateY(3px) rotate(180deg);transform:translateY(3px) rotate(180deg)}
-.navbar{width:100%;float:left;position:relative;background:rgba(255,255,255,0.85);-webkit-box-shadow:0 3px 8px rgba(0,0,0,0.1);box-shadow:0 3px 8px rgba(0,0,0,0.1)}
+.navbar{width:100%;float:left;position:relative;background:#375643;-webkit-box-shadow:0 3px 8px rgba(0,0,0,0.1);box-shadow:0 3px 8px rgba(0,0,0,0.1)}
 .navbar .wrapper{height:100%;padding-top:10px;padding-bottom:6px}
 .navbar .logo{display:inline-block;float:left;width:50px}
 .navbar .logo a,.navbar .logo img{display:inline-block;width:100%}
 .navbar .logo img{height:auto}
-body.scrolled .navbar{background:rgba(255,255,255,0.95)}
+body.scrolled .navbar{background:#375643}
 #overlay{width:100%;height:100%;position:fixed;top:0;left:0;z-index:999;background:rgba(0,0,0,0.45);display:none;-webkit-animation-duration:.5s;animation-duration:.5s}
 #site-navigation{position:fixed;top:30px;right:-485px;max-width:485px;width:100%;height:100%;z-index:-99;-webkit-transform:translateX(120%);transform:translateX(120%);-webkit-transition:all ease .3s;transition:all ease .3s;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:hidden;-webkit-animation-duration:1s;animation-duration:1s}
 #site-navigation.open{-webkit-transform:translateX(0);transform:translateX(0);width:100%;-webkit-box-shadow:-1px 4px 30px rgba(0,0,0,0.3);box-shadow:-1px 4px 30px rgba(0,0,0,0.3);overflow:visible;right:0;z-index:9999;-webkit-animation-name:"fadeIn";animation-name:"fadeIn"}
