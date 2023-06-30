@@ -34,12 +34,12 @@ $placeholder = THEMEURI . 'images/rectangle.png';
 					<div id="entryBlock<?php echo $i?>" class="fbox <?php echo ($thumbnail) ? 'hasImage':'noImage'; ?>">
 						<div class="inside text-center">
 							<div class="imagediv <?php echo ($thumbnail) ? 'hasImage':'noImage'?>">
-								<a href="<?php echo $pagelink['url']; ?>" class="link">
+								<?php if($pagelink){ ?><a href="<?php echo $pagelink['url']; ?>" class="link"><?php } ?>
 									<?php if ($thumbnail) { ?>
 										<span class="img" style="background-image:url('<?php echo $thumbnail['url']; ?>')"></span>
 									<?php } ?>
 									<img src="<?php echo $placeholder ?>" alt="" aria-hidden="true" class="placeholder">
-								</a>
+								<?php if($pagelink){ ?></a><?php } ?>
 							</div>
 							<div class="titlediv">
 								<?php if($title) { ?>
