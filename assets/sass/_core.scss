@@ -468,7 +468,7 @@ body.scrolled .navbar {
 }
 
 // #site-navigation
-.corpnav, .pisgahnav, .santeenav, .whitewaternav, .graysonnav, .gravelmap 
+.corpnav, .pisgahnav, .santeenav, .whitewaternav, .graysonnav, .gravelmapnav, .centernav 
 {
 	position: fixed;
 	top: 30px;
@@ -581,6 +581,7 @@ body.scrolled .navbar {
 }
 .navigation-children,
 .navigation-children-pisgah,
+.navigation-children-center,
 .navigation-children-santee,
 .navigation-children-whitewater,
 .navigation-children-grayson {
@@ -648,6 +649,7 @@ body.scrolled .navbar {
 	}
 	.children-group,
 	.children-group-pisgah,
+	.children-group-center,
 	.children-group-santee,
 	.children-group-whitewater,
 	.children-group-grayson {
@@ -13581,6 +13583,7 @@ body.single-race .filter-wrapper {
 	}
 	.navigation-children,
 	.navigation-children-pisgah,
+	.navigation-children-center,
 	.navigation-children-santee,
 	.navigation-children-whitewater,
 	.navigation-children-grayson,
@@ -13609,7 +13612,7 @@ body.single-race .filter-wrapper {
 		z-index: 3000;
 	}
 	// #site-navigation.child-open
-	.corpnav, .pisgahnav, .santeenav, .whitewaternav, .graysonnav, .gravelmapnav 
+	.corpnav, .pisgahnav, .santeenav, .whitewaternav, .graysonnav, .gravelmapnav , .centernav 
 	{
 		&.child-open {
 			.closeNav {
@@ -13632,6 +13635,7 @@ body.single-race .filter-wrapper {
 	body.logged-in.admin-bar {
 		.navigation-children .children-group.open,
 		.navigation-children-pisgah .children-group-pisgah.open,
+		.navigation-children-center .children-group-center.open,
 		.navigation-children-santee .children-group-santee.open,
 		.navigation-children-whitewater .children-group-whitewater.open,
 		.navigation-children-grayson .children-group-grayson.open,
