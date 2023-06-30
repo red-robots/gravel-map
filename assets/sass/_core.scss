@@ -142,6 +142,7 @@ a {
 	.navbar {
 		padding-top: 0;
 		padding-bottom: 0;
+		background-color: $green;
 	}
 }
 .topbar {
@@ -13321,10 +13322,10 @@ body.single-race .filter-wrapper {
 
 /* FOOTER */
 .site-footer {
-	background-image:url("images/footer_bg.png");
-	background-position: center;
-	background-size: cover;
-	background-color: #000;
+	// background-image:url("images/footer_bg.png");
+	// background-position: center;
+	// background-size: cover;
+	background-color: $green;
 	color: shade(#FFF,30%);
 	font-size: 12px;
 	line-height: 1.3;

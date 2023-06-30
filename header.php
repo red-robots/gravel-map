@@ -92,7 +92,7 @@ if($postHeroImage) {
 					<span class="t"><?php echo $trail_text ?></span>
 					<span class="s"></span>
 				</span> -->
-				<span id="todayLink" class="today el">
+				<!-- <span id="todayLink" class="today el">
 					<?php $today_options = get_field("today","option"); ?>
 					<?php if ($today_options) { ?>
 						<a href="#" id="todayToggle" class="spanlink"><i id="todayTxt" class="txt">TODAY</i><i class="arrow"></i></a>
@@ -147,7 +147,7 @@ if($postHeroImage) {
 							</ul>
 						</div>
 					<?php } ?>
-				</span>
+				</span> -->
 				<span class="srchLink el">
 					<a id="searchHereBtn" class="search"><i class="fas fa-search"></i></a>
 				</span>
