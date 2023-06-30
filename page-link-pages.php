@@ -1,43 +1,60 @@
 <?php
 /**
  * Template Name: Link Pages
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package bellaworks
  */
 
-$placeholder = THEMEURI . 'images/rectangle.png';
-$banner = get_field("flexslider_banner");
-$has_banner = ($banner) ? 'hasbanner':'nobanner';
 get_header(); 
-
-if( is_page('waiver') ) {
-	$pageClass = 'waiver';
-} else {
-	$pageClass = '';
-}
+$placeholder = THEMEURI . 'images/rectangle.png';
 ?>
 
-<div id="primary" class="content-area-full content-default page-default-template <?php echo $has_banner ?>">
-	<main id="main" class="site-main wrapper" role="main">
-
+<div id="primary" data-post="<?php echo get_the_ID()?>" class="content-area-full activities-parent">
 		<?php while ( have_posts() ) : the_post(); ?>
-
-			<section class="text-centered-section">
-				<div class="wrapper text-center">
-					<div class="page-header">
-						<h1 class="page-title"><?php the_title(); ?></h1>
-					</div>
-					<div class="<?php echo $pageClass; ?>">
-						<?php the_content(); ?>
+				<div class="intro-text-wrap">
+					<div class="wrapper">
+						<h1 class="page-title"><span><?php the_title(); ?></span></h1>
+						<div class="intro-text"><?php the_content(); ?></div>
 					</div>
 				</div>
-			</section>
+		<?php endwhile;  ?>
 
-		<?php endwhile; ?>
+		<?php
+		$postype = 'page';
+		$perpage = -1;
+		$pId = get_the_ID();
+		if ( have_rows('tiles') ) { ?>
+		<section id="section-activities" data-section="Activities" class="section-content camp-activities activities-parent-page">
+			<div class="entryList flexwrap">
 
-	</main><!-- #main -->
+				<?php $i=1; while ( have_rows('tiles') ) : the_row();  
+					$thumbnail = get_sub_field('image');
+					
+					$title = get_sub_field('title');
+					$pagelink = get_sub_field('link');
+					?>
+					<div id="entryBlock<?php echo $i?>" class="fbox <?php echo ($thumbnail) ? 'hasImage':'noImage'; ?>">
+						<div class="inside text-center">
+							<div class="imagediv <?php echo ($thumbnail) ? 'hasImage':'noImage'?>">
+								<a href="<?php echo $pagelink['url']; ?>" class="link">
+									<?php if ($thumbnail) { ?>
+										<span class="img" style="background-image:url('<?php echo $thumbnail['url']; ?>')"></span>
+									<?php } ?>
+									<img src="<?php echo $placeholder ?>" alt="" aria-hidden="true" class="placeholder">
+								</a>
+							</div>
+							<div class="titlediv">
+								<p class="name"><?php echo $title ?></p>
+								<div class="buttondiv">
+									<a href="<?php echo $pagelink['url']; ?>" target="?php echo $pagelink['target']; ?>" class="btn-sm xs"><span><?php echo $pagelink['title']; ?></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<?php $i++; endwhile; wp_reset_postdata(); ?>
+
+			</div>
+		</section>
+		<?php } ?>
+
 </div><!-- #primary -->
 
 <?php

@@ -840,7 +840,7 @@ body.scrolled .navbar {
 	box-shadow: none;
 	padding: 10px;
 	position: relative;
-	top: -2px;
+	top: 3px;
 	transition: all ease .3s;
 	span.bar {
 		width: 25px;
@@ -852,7 +852,8 @@ body.scrolled .navbar {
 	span.bar:before,
 	span.bar:after {
 		height: 4px;
-		background: #000;
+		// background: #000;
+		background: #fff;
 		position: absolute;
 		border-radius: 2px;
 	}
