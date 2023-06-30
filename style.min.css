@@ -1644,20 +1644,20 @@ a:hover{color:#f8ac95}
 .navbar .logo img{height:auto}
 body.scrolled .navbar{background:#375643}
 #overlay{width:100%;height:100%;position:fixed;top:0;left:0;z-index:999;background:rgba(0,0,0,0.45);display:none;-webkit-animation-duration:.5s;animation-duration:.5s}
-#site-navigation{position:fixed;top:30px;right:-485px;max-width:485px;width:100%;height:100%;z-index:-99;-webkit-transform:translateX(120%);transform:translateX(120%);-webkit-transition:all ease .3s;transition:all ease .3s;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:hidden;-webkit-animation-duration:1s;animation-duration:1s}
-#site-navigation.open{-webkit-transform:translateX(0);transform:translateX(0);width:100%;-webkit-box-shadow:-1px 4px 30px rgba(0,0,0,0.3);box-shadow:-1px 4px 30px rgba(0,0,0,0.3);overflow:visible;right:0;z-index:9999;-webkit-animation-name:"fadeIn";animation-name:"fadeIn"}
-#site-navigation .nav-inner{background:rgba(241,89,42,0.95);padding:90px 0 50px;height:100%;overflow-x:hidden;overflow-y:auto;position:relative;z-index:20}
-#site-navigation .navigation{display:block;width:100%;text-align:center}
-#site-navigation ul{margin:0;padding:0;list-style:none}
-#site-navigation ul.menu{width:100%;text-align:right;margin-top:0;margin-bottom:30px}
-#site-navigation ul.menu>li{position:relative;-webkit-transition:all ease .3s;transition:all ease .3s}
-#site-navigation ul.menu>li:after{content:"";display:block;width:0;height:100%;background:#cd4c24;position:absolute;top:0;right:0;opacity:0;-webkit-transition:all ease .5s;transition:all ease .5s}
-#site-navigation ul.menu>li>a{display:block;color:#FFF;font-family:"Lato",sans-serif;font-size:18px;font-weight:400;line-height:1.2;letter-spacing:2px;text-decoration:none;text-transform:uppercase;padding:14px 60px 14px 50px;position:relative;z-index:10}
-#site-navigation ul.menu>li>a span{display:inline-block;position:relative}
-#site-navigation ul.menu>li>a span:before,#site-navigation ul.menu>li>a span:after{content:"";display:block;background:#FFF;position:absolute;top:10px;right:-15px}
-#site-navigation ul.menu>li>a span:before{width:9px;height:1px}
-#site-navigation ul.menu>li>a span:after{height:9px;width:1px;margin-top:-4px;margin-right:4px}
-#site-navigation ul.menu>li.active:after,#site-navigation ul.menu>li:hover:after{opacity:1;width:100%}
+.corpnav,.pisgahnav,.santeenav,.whitewaternav,.graysonnav,.gravelmap{position:fixed;top:30px;right:-485px;max-width:485px;width:100%;height:100%;z-index:-99;-webkit-transform:translateX(120%);transform:translateX(120%);-webkit-transition:all ease .3s;transition:all ease .3s;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:hidden;-webkit-animation-duration:1s;animation-duration:1s}
+.corpnav.open,.pisgahnav.open,.santeenav.open,.whitewaternav.open,.graysonnav.open,.gravelmap.open{-webkit-transform:translateX(0);transform:translateX(0);width:100%;-webkit-box-shadow:-1px 4px 30px rgba(0,0,0,0.3);box-shadow:-1px 4px 30px rgba(0,0,0,0.3);overflow:visible;right:0;z-index:9999;-webkit-animation-name:"fadeIn";animation-name:"fadeIn"}
+.corpnav .nav-inner,.pisgahnav .nav-inner,.santeenav .nav-inner,.whitewaternav .nav-inner,.graysonnav .nav-inner,.gravelmap .nav-inner{background:rgba(241,89,42,0.95);padding:90px 0 50px;height:100%;overflow-x:hidden;overflow-y:auto;position:relative;z-index:20}
+.corpnav .navigation,.pisgahnav .navigation,.santeenav .navigation,.whitewaternav .navigation,.graysonnav .navigation,.gravelmap .navigation{display:block;width:100%;text-align:center}
+.corpnav ul,.pisgahnav ul,.santeenav ul,.whitewaternav ul,.graysonnav ul,.gravelmap ul{margin:0;padding:0;list-style:none}
+.corpnav ul.menu,.pisgahnav ul.menu,.santeenav ul.menu,.whitewaternav ul.menu,.graysonnav ul.menu,.gravelmap ul.menu{width:100%;text-align:right;margin-top:0;margin-bottom:30px}
+.corpnav ul.menu>li,.pisgahnav ul.menu>li,.santeenav ul.menu>li,.whitewaternav ul.menu>li,.graysonnav ul.menu>li,.gravelmap ul.menu>li{position:relative;-webkit-transition:all ease .3s;transition:all ease .3s}
+.corpnav ul.menu>li:after,.pisgahnav ul.menu>li:after,.santeenav ul.menu>li:after,.whitewaternav ul.menu>li:after,.graysonnav ul.menu>li:after,.gravelmap ul.menu>li:after{content:"";display:block;width:0;height:100%;background:#cd4c24;position:absolute;top:0;right:0;opacity:0;-webkit-transition:all ease .5s;transition:all ease .5s}
+.corpnav ul.menu>li>a,.pisgahnav ul.menu>li>a,.santeenav ul.menu>li>a,.whitewaternav ul.menu>li>a,.graysonnav ul.menu>li>a,.gravelmap ul.menu>li>a{display:block;color:#FFF;font-family:"Lato",sans-serif;font-size:18px;font-weight:400;line-height:1.2;letter-spacing:2px;text-decoration:none;text-transform:uppercase;padding:14px 60px 14px 50px;position:relative;z-index:10}
+.corpnav ul.menu>li>a span,.pisgahnav ul.menu>li>a span,.santeenav ul.menu>li>a span,.whitewaternav ul.menu>li>a span,.graysonnav ul.menu>li>a span,.gravelmap ul.menu>li>a span{display:inline-block;position:relative}
+.corpnav ul.menu>li>a span:before,.corpnav ul.menu>li>a span:after,.pisgahnav ul.menu>li>a span:before,.pisgahnav ul.menu>li>a span:after,.santeenav ul.menu>li>a span:before,.santeenav ul.menu>li>a span:after,.whitewaternav ul.menu>li>a span:before,.whitewaternav ul.menu>li>a span:after,.graysonnav ul.menu>li>a span:before,.graysonnav ul.menu>li>a span:after,.gravelmap ul.menu>li>a span:before,.gravelmap ul.menu>li>a span:after{content:"";display:block;background:#FFF;position:absolute;top:10px;right:-15px}
+.corpnav ul.menu>li>a span:before,.pisgahnav ul.menu>li>a span:before,.santeenav ul.menu>li>a span:before,.whitewaternav ul.menu>li>a span:before,.graysonnav ul.menu>li>a span:before,.gravelmap ul.menu>li>a span:before{width:9px;height:1px}
+.corpnav ul.menu>li>a span:after,.pisgahnav ul.menu>li>a span:after,.santeenav ul.menu>li>a span:after,.whitewaternav ul.menu>li>a span:after,.graysonnav ul.menu>li>a span:after,.gravelmap ul.menu>li>a span:after{height:9px;width:1px;margin-top:-4px;margin-right:4px}
+.corpnav ul.menu>li.active:after,.corpnav ul.menu>li:hover:after,.pisgahnav ul.menu>li.active:after,.pisgahnav ul.menu>li:hover:after,.santeenav ul.menu>li.active:after,.santeenav ul.menu>li:hover:after,.whitewaternav ul.menu>li.active:after,.whitewaternav ul.menu>li:hover:after,.graysonnav ul.menu>li.active:after,.graysonnav ul.menu>li:hover:after,.gravelmap ul.menu>li.active:after,.gravelmap ul.menu>li:hover:after{opacity:1;width:100%}
 .navigation-children,.navigation-children-pisgah,.navigation-children-santee,.navigation-children-whitewater,.navigation-children-grayson{position:fixed;top:0;right:485px;width:0;height:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden}
 .navigation-children .navchild-inner,.navigation-children-pisgah .navchild-inner,.navigation-children-santee .navchild-inner,.navigation-children-whitewater .navchild-inner,.navigation-children-grayson .navchild-inner{width:100%;height:100%;position:relative;z-index:99;overflow-x:hidden;overflow-y:auto}
 .navigation-children .children-menu-wrap,.navigation-children-pisgah .children-menu-wrap,.navigation-children-santee .children-menu-wrap,.navigation-children-whitewater .children-menu-wrap,.navigation-children-grayson .children-menu-wrap{-webkit-column-count:2;-moz-column-count:2;column-count:2}
@@ -3700,7 +3700,7 @@ ul.items .show{display:block}
 #race-pop .race-pop-txt{float:left;margin:20px auto 20px auto;width:100%}
 #race-pop a{color:#000}
 #race-pop .popbtn a:hover{color:#fff}
-.prenav{width:auto;float:right;height:100%;background:rgba(186,13,48,0.95);padding:90px 0 50px}
+.prenav{width:auto;float:right;height:100%;background:rgba(241,89,42,0.95);padding:90px 0 50px}
 .prenav ul{margin:0;padding:0}
 .prenav li{margin:20px 0;display:block}
 .prenav li.active a{background-color:rgba(255,255,255,0.2)}
@@ -4183,15 +4183,15 @@ body.single-race .filter-wrapper form .filter-field-group .filter-label span{pad
 #timeline-area.timeline-wrapper .timeline .history .photo .pic img.helper{display:none !important}
 #timeline-area.timeline-wrapper .timeline .history .photo .pic img.actual-image{display:block !important}
 }@media screen and (max-width:799px){#site-navigation.open{max-width:100%}
-.navigation-children.open,.navigation-children-pisgah.open,.navigation-children-santee.open,.navigation-children-whitewater.open,.navigation-children-grayson.open{right:0;max-width:100%;width:100%;z-index:1000}
+.navigation-children.open,.navigation-children-pisgah.open,.navigation-children-santee.open,.navigation-children-whitewater.open,.navigation-children-grayson.open,.navigation-children-gravelmap.open{right:0;max-width:100%;width:100%;z-index:1000}
 #site-navigation.open{max-width:100%}
 .navigation-children.open{right:0;max-width:100%;width:100%;z-index:1000}
 .closeNav{z-index:3000}
-#site-navigation.child-open.child-open .closeNav{border:1px solid #f1592a;color:#f1592a}
-#site-navigation.child-open.child-open .closeNav span:before,#site-navigation.child-open.child-open .closeNav span:after{background:#f1592a}
-#site-navigation.child-open.child-open .closeNav#closeNavChild{display:inline-block}
-#site-navigation.child-open.child-open #closeNav.closeNav{display:none}
-body.logged-in.admin-bar .navigation-children .children-group.open,body.logged-in.admin-bar .navigation-children-pisgah .children-group-pisgah.open,body.logged-in.admin-bar .navigation-children-santee .children-group-santee.open,body.logged-in.admin-bar .navigation-children-whitewater .children-group-whitewater.open,body.logged-in.admin-bar .navigation-children-grayson .children-group-grayson.open{padding-top:14vh}
+.corpnav.child-open .closeNav,.pisgahnav.child-open .closeNav,.santeenav.child-open .closeNav,.whitewaternav.child-open .closeNav,.graysonnav.child-open .closeNav,.gravelmapnav.child-open .closeNav{border:1px solid #f1592a;color:#f1592a}
+.corpnav.child-open .closeNav span:before,.corpnav.child-open .closeNav span:after,.pisgahnav.child-open .closeNav span:before,.pisgahnav.child-open .closeNav span:after,.santeenav.child-open .closeNav span:before,.santeenav.child-open .closeNav span:after,.whitewaternav.child-open .closeNav span:before,.whitewaternav.child-open .closeNav span:after,.graysonnav.child-open .closeNav span:before,.graysonnav.child-open .closeNav span:after,.gravelmapnav.child-open .closeNav span:before,.gravelmapnav.child-open .closeNav span:after{background:#f1592a}
+.corpnav.child-open .closeNav#closeNavChild,.pisgahnav.child-open .closeNav#closeNavChild,.santeenav.child-open .closeNav#closeNavChild,.whitewaternav.child-open .closeNav#closeNavChild,.graysonnav.child-open .closeNav#closeNavChild,.gravelmapnav.child-open .closeNav#closeNavChild{display:inline-block}
+.corpnav.child-open #closeNav.closeNav,.pisgahnav.child-open #closeNav.closeNav,.santeenav.child-open #closeNav.closeNav,.whitewaternav.child-open #closeNav.closeNav,.graysonnav.child-open #closeNav.closeNav,.gravelmapnav.child-open #closeNav.closeNav{display:none}
+body.logged-in.admin-bar .navigation-children .children-group.open,body.logged-in.admin-bar .navigation-children-pisgah .children-group-pisgah.open,body.logged-in.admin-bar .navigation-children-santee .children-group-santee.open,body.logged-in.admin-bar .navigation-children-whitewater .children-group-whitewater.open,body.logged-in.admin-bar .navigation-children-grayson .children-group-grayson.open,body.logged-in.admin-bar .navigation-children-gravelmap .children-group-gravelmap.open{padding-top:14vh}
 #site-navigation.child-open .closeNav{border:1px solid #f1592a;color:#f1592a}
 #site-navigation.child-open .closeNav span:before,#site-navigation.child-open .closeNav span:after{background:#f1592a}
 #site-navigation.child-open .closeNav#closeNavChild{display:inline-block}

@@ -5,59 +5,21 @@ $current_post_id = ( isset($post->ID) && $post->ID ) ? $post->ID : '';
 $current_url = ($current_post_id) ? get_permalink($current_post_id) : '';
 $current_url = ($current_url) ? rtrim($current_url,"/") : '';
 
-$parents = get_field("parent_menu","option");
+$parents = get_field("parent_menu_pisgah","option");
 $childenMenuItems = array();
 
-$secondary_menu = get_field("secondary_menu","option");
-
-// $whitewater_visibility = get_field("whitewater_visibility","option");
-$locations['whitewater'] = 'Whitewater';
-$locations['center'] = 'Center';
-$locations['pisgah'] = 'Pisgah';
-$locations['santee'] = 'Santee';
-$locations['grayson'] = 'Grayson';
-$locations['gravelmap'] = 'Gravelmap';
-$preNavs = array();
-foreach ($locations as $slug => $name) { 
-  $visibility = get_field($slug . "_visibility","option");
-  if($slug=='center') {
-    $visibility=='show';
-  }
-  if($visibility=='show') {
-    $preNavs[] = $slug;
-  }
-}
+$secondary_menu_pisgah = get_field("secondary_menu_pisgah","option");
 
 if($parents) { ?>
 
-<div id="site-navigationc" class="corpnav defaultNav">
-  <a href="#" id="closeNav" class="closeNav"><span>x</span></a>
+<div id="site-navigationp" class="pisgahnav">
+	<a href="#" id="closeNav" class="closeNav pisgahclose"><span>x</span></a>
 
-<?php if( $preNavs ) { ?>
-  <div class="prenav">
-    <ul>
-      <?php foreach ($locations as $slug => $name) { 
-        $className = ($slug=='gravelmap') ? 'corplink active ' : $slug . 'link';
-        $dataNav = ($slug=='gravelmap') ? 'default' : $slug.'nav';
-        $siteLink = get_field($slug . "_sitelink","option");
-        $visibility = ($slug=='gravelmap') ? 'show' : get_field($slug . "_visibility","option");
-        
-        if( $visibility == 'show' ) { ?>
-          <li class="sitelinks <?php echo $className ?> <?php if($slug=='whitewater'){echo 'umbrella';} ?>">
-            <a href="#" data-nav=".<?php echo $dataNav ?>" data-home="<?php echo $siteLink ?>"><?php echo $name ?></a>
-          </li>
-        <?php }
-        
-      } ?>
-    </ul>
-  </div>
-<?php } ?>
-	
 
-  <div class="navgroup nav__main">
+	<div class="nav__content">
   	<?php //get_template_part('parts/prenav'); ?>
   	<div class="nav-inner">
-  		<nav class="navigation animated">
+  		<nav class="navigationz animated pisgah">
   			<ul class="menu">
   				<?php $i=1; foreach ($parents as $p) { 
   					$parent_name = $p['parent_menu_name'];
@@ -97,10 +59,12 @@ if($parents) { ?>
   			</ul>
   			<div class="squiggly"><div class="line"></div></div>
 
-  			<?php if ($secondary_menu) { ?>
+
   			<div class="secondary-menu">
+          <?php if( $secondary_menu_pisgah ){
+          ?>
   				<ul class="menu2">
-  				<?php foreach ($secondary_menu as $sm) { 
+  				<?php foreach ($secondary_menu_pisgah as $sm) { 
   					$s = $sm['link'];
   					$s_icon = $sm['icon_class'];
   					if($s) {
@@ -119,19 +83,20 @@ if($parents) { ?>
   					<?php } ?>
   				<?php } ?>
   				</ul>
+          <?php } ?>
   				<form action="<?php bloginfo('url'); ?>/" method="get">
   				    <input class="nav-search" type="text" name="s" id="search" value="<?php the_search_query(); ?>" />
   				    <!-- <input type="image" alt="Search" src="<?php bloginfo( 'template_url' ); ?>/images/search.png" /> -->
   				</form>
   			</div>
-  			<?php } ?>
+  			
   		</nav>
   	</div>
 
   	<?php /* CHILDREN MENU */ 
   	if($childenMenuItems) { ?>
 
-  		<div id="childrenNavs" class="navigation-children navigation__children">
+  		<div id="childrenNavs" class="navigation-children-pisgah navigation__children">
   			<a href="javascript:void(0)" class="childNavCloseBtn"><span>x</span></a>
   			<div class="navchild-inner">
   				
@@ -139,7 +104,7 @@ if($parents) { ?>
   					$parent_name = $ch['parent_name'];
   					$childrenData = $ch['children_data'];
   					if($childrenData) { ?>
-  					<div class="children-group <?php echo $k ?>" data-parent="<?php echo $k ?>">
+  					<div class="children-group-pisgah <?php echo $k ?>" data-parent="<?php echo $k ?>">
   						<div class="parent-name"><?php echo $parent_name ?></div>
   						<div class="children-menu-wrap">
   							<?php foreach ($childrenData as $e) { 
@@ -200,8 +165,6 @@ if($parents) { ?>
   	<?php } ?>
   </div>
 
-  <?php /* Nav container for another group of links */ ?>
-  <div class="navgroup nav__other" data-for=""></div>
 
 </div>
 

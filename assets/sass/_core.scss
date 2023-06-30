@@ -467,8 +467,8 @@ body.scrolled .navbar {
 	@include animateThis(0.5s);
 }
 
-#site-navigation
-// .corpnav, .pisgahnav, .santeenav, .whitewaternav, .graysonnav 
+// #site-navigation
+.corpnav, .pisgahnav, .santeenav, .whitewaternav, .graysonnav, .gravelmap 
 {
 	position: fixed;
 	top: 30px;
@@ -13583,7 +13583,8 @@ body.single-race .filter-wrapper {
 	.navigation-children-pisgah,
 	.navigation-children-santee,
 	.navigation-children-whitewater,
-	.navigation-children-grayson {
+	.navigation-children-grayson,
+	.navigation-children-gravelmap {
 		&.open {
 			right: 0;
 			max-width: 100%;
@@ -13607,8 +13608,8 @@ body.single-race .filter-wrapper {
 	.closeNav {
 		z-index: 3000;
 	}
-	#site-navigation.child-open
-	// .corpnav, .pisgahnav, .santeenav, .whitewaternav, .graysonnav 
+	// #site-navigation.child-open
+	.corpnav, .pisgahnav, .santeenav, .whitewaternav, .graysonnav, .gravelmapnav 
 	{
 		&.child-open {
 			.closeNav {
@@ -13633,7 +13634,8 @@ body.single-race .filter-wrapper {
 		.navigation-children-pisgah .children-group-pisgah.open,
 		.navigation-children-santee .children-group-santee.open,
 		.navigation-children-whitewater .children-group-whitewater.open,
-		.navigation-children-grayson .children-group-grayson.open {
+		.navigation-children-grayson .children-group-grayson.open,
+		.navigation-children-gravelmap .children-group-gravelmap.open {
 			padding-top: 14vh;
 		}
 	}
@@ -14550,7 +14552,8 @@ ul.items {
 	width: auto;
 	float: right;
 	height: 100%;
-	background: rgba(186, 13, 48, 0.95);
+	// background: rgba(186, 13, 48, 0.95);
+	background: rgba($red,.95);
 	padding: 90px 0 50px;
 	ul {
 		margin: 0;
