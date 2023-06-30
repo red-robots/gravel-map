@@ -42,10 +42,14 @@ $placeholder = THEMEURI . 'images/rectangle.png';
 								</a>
 							</div>
 							<div class="titlediv">
-								<p class="name"><?php echo $title ?></p>
-								<div class="buttondiv">
-									<a href="<?php echo $pagelink['url']; ?>" target="?php echo $pagelink['target']; ?>" class="btn-sm xs"><span><?php echo $pagelink['title']; ?></span></a>
-								</div>
+								<?php if($title) { ?>
+									<p class="name"><?php echo $title ?></p>
+								<?php } ?>
+								<?php if($pagelink){ ?>
+									<div class="buttondiv">
+										<a href="<?php echo $pagelink['url']; ?>" target="?php echo $pagelink['target']; ?>" class="btn-sm xs"><span><?php echo $pagelink['title']; ?></span></a>
+									</div>
+								<?php } ?>
 							</div>
 						</div>
 					</div>
