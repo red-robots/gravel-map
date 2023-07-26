@@ -250,7 +250,7 @@ while ( have_posts() ) : the_post(); ?>
 <?php  
 /* Comments */ 
 if ( comments_open() || get_comments_number() ) {
-    comments_template();
+    //comments_template();
   }
 ?>
 
@@ -289,19 +289,19 @@ jQuery(document).ready(function($){
     $("#pageTabs").html('<div class="wrapper"><div id="tabcontent">'+tabs+'</div></div>');
   }
 
-  $("#tabs a").on("click",function(e){
-    e.preventDefault();
-    var panel = $(this).attr('data-rel');
-    $("#tabs li").not(this).removeClass('active');
-    $(this).parents("li").addClass('active');
-    if( $(panel).length ) {
-      $(".info-panel").not(panel).removeClass('active');
-      $(".info-panel").not(panel).find('.info-inner').removeClass('fadeIn');
-      $(panel).addClass('active');
-      //$(panel).find('.info-inner').addClass('fadeIn').slideToggle();
-      $(panel).find('.info-inner').toggleClass('fadeIn');
-    }
-  });
+  // $("#tabs a").on("click",function(e){
+  //   e.preventDefault();
+  //   var panel = $(this).attr('data-rel');
+  //   $("#tabs li").not(this).removeClass('active');
+  //   $(this).parents("li").addClass('active');
+  //   if( $(panel).length ) {
+  //     $(".info-panel").not(panel).removeClass('active');
+  //     $(".info-panel").not(panel).find('.info-inner').removeClass('fadeIn');
+  //     $(panel).addClass('active');
+  //     //$(panel).find('.info-inner').addClass('fadeIn').slideToggle();
+  //     $(panel).find('.info-inner').toggleClass('fadeIn');
+  //   }
+  // });
 
   $(".info-title").on("click",function(e){
     var parent = $(this).parents('.info-panel');

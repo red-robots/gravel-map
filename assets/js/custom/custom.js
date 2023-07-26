@@ -49,6 +49,19 @@ jQuery(document).ready(function ($) {
 // }
 
 // $("select#diff").on("change", vali);
+$("#tabs a").on("click",function(e){
+    e.preventDefault();
+    var panel = $(this).attr('data-rel');
+    $("#tabs li").not(this).removeClass('active');
+    $(this).parents("li").addClass('active');
+    if( $(panel).length ) {
+      $(".info-panel").not(panel).removeClass('active');
+      $(".info-panel").not(panel).find('.info-inner').removeClass('fadeIn');
+      $(panel).addClass('active');
+      //$(panel).find('.info-inner').addClass('fadeIn').slideToggle();
+      $(panel).find('.info-inner').toggleClass('fadeIn');
+    }
+  });
 
 $("select#diff").change(function() {
 	var diffResult = $(this).val();
